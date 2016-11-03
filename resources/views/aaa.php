@@ -12,6 +12,7 @@
     <!-- font awesome -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="{{ URL::asset('bootstrap/css/bootstrap.min.css') }}"/>
@@ -20,8 +21,19 @@
     <link rel="stylesheet" href="{{ URL::asset('animate/animate.css') }}"/>
     <link rel="stylesheet" href="{{ URL::asset('animate/set.css') }}"/>
 
+    <!-- gallery -->
+    <link rel="stylesheet" href="{{ URL::asset('gallery/blueimp-gallery.min.css') }}">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{ URL::asset('images/favicon.ico')}}" type="image/x-icon">
+
 
     <link rel="stylesheet" href="{{ URL::asset('style.css') }}">
+
+
+
+
 
 
 </head>
@@ -75,9 +87,21 @@
 <!-- #Header Starts -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="home">
     <!-- Slider Starts -->
-    <div id="myCarousel" class="carousel slide banner-slider " data-ride="carousel">
+    <div id="myCarousel" class="carousel slide banner-slider animated flipInX" data-ride="carousel">
         <div class="carousel-inner">
             <!-- Item 1 -->
             <div class="item active">
@@ -129,175 +153,325 @@
 </div>
 
 
-<div id="choice" class="container-fluid spacer ">
-
-
+<div id="choice" class="container spacer ">
     <div class="row">
-        <div class="col-lg-12 col-xs-12  fadeInLeft">
-            <h1 class="text-center " style="text-align: center">
-                快速選擇
-            </h1>
-            <hr style="border: 1px solid lightgray; margin-top: 10px; width: 60%">
-        </div>
-    </div>
-
-
-    <div class="row" style="margin-top: 50px">
-        <div class="col-lg-offset-2 col-lg-2 col-xs-12   process">
-                <ul class="text-center list-inline  ">
+        <div class="col-lg-12 wowload fadeInLeft">
+            <div class="process">
+                <h2 class="text-center wowload fadeInUp">
+                    快速選擇
+                </h2>
+                <hr style="border: 1px solid lightgray; margin-top: 10px;" >
+                <ul class="row text-center list-inline  wowload bounceInUp" style="margin-top: 100px; margin-bottom: 400px">
                     <li style="height: 15em;width: 15em; line-height: 22em;">
-                        <span style="font-size: 25px" class="scroll">
+                        <div class="scroll animated fadeInUp">
+
+                        <span style="font-size: 25px">
                             <a href="#study" style="text-decoration: none;">
                             <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                             <b>升學</b>
                                 </a>
                         </span>
+                        </div>
                     </li>
-                </ul>
-        </div>
-        <div class="col-lg-offset-1 col-lg-2 col-xs-12   process">
-                <ul class="text-center list-inline">
+                    <li style="height: 15em;width: 15em; line-height: 22em;">
 
-                    <li style="height: 15em;width: 15em; line-height: 22em;">
-                        <span class="scroll" style="font-size: 25px">
-                            <a href="#work" style="text-decoration: none;">
+                        <div class="scroll animated fadeInUp">
+                            <span style="font-size: 25px">
+                                    <a href="#work" style="text-decoration: none;">
                                     <i class="fa fa-user" aria-hidden="true"></i><b>就業</b>
-                                </a>
-                        </span>
+                                    </a>
+                            </span>
+                        </div>
                     </li>
-                </ul>
-        </div>
-        <div class="col-lg-offset-1 col-lg-2  col-xs-12 process">
-                <ul class="text-center list-inline  ">
                     <li style="height: 15em;width: 15em; line-height: 22em;">
-                        <span class="scroll" style="font-size: 25px">
-                            <a href="#study" style="text-decoration: none;">
-                                <i class="fa fa-hospital-o" aria-hidden="true"></i><b>體檢</b>
-                            </a>
+                        <span style="font-size: 25px">
+                            <i class="fa fa-hospital-o" aria-hidden="true"></i><b>體檢</b>
                         </span>
                     </li>
                 </ul>
+            </div>
         </div>
     </div>
 </div>
 
+
+
+
+
+
+
+
+
+
 <div id="study">
-    <div class="jumbotron"
-         style=" background-image: url({{URL::asset('images/index/study.jpg')}}); overflow: hidden; background-size: cover  ; height: 800px; width: 100% ;">
-        <div class="overlay" style="height: 500px;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-offset-3 col-lg-6 col-xs-12">
-                        <div style="background-color: rgba(255,255,255,0.6) ; padding: 5% ; margin-top: 15%">
-                            <h1 style="font-size: 50px; color: black; text-align: center">升學班隊</h1>
-                            <hr style="border: 1px solid #999999;">
-                            <span style="font-size: 20px;line-height: 50px; color: black">
+    <!-- Slider Starts -->
+    <div id="myCarousel" class="carousel slide banner-slider" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Item 1 -->
+            <div class="item active">
+                <img src="{{URL::asset('images/index/study.jpg')}}" alt="">
+                <div class="carousel-caption">
+                    <div class="caption-wrapper" style="text-align: left;text-shadow: none;">
+                        <div class="caption-info">
+
+                            <div style="width: 50%;
+                            height: 500px;
+                            background-color: rgba(255,255,255,0.6);
+                            padding: 40px;
+                            margin: 0 auto;">
+                                <h1 class="animated bounceInLeft"
+                                    style="font-size: 50px; color: black; text-align: center">升學班隊</h1>
+                                <hr style="border: 1px solid #999999;">
+
+                                <span style="font-size: 20px;line-height: 50px; color: black">
                                     軍事院校是培育國軍領導幹部的搖籃，一貫的教育理念採「哲學、科學及兵學」並重之「文武合一」教育，其內涵以人格教育、智能教育、軍事訓練、體能鍛鍊為主。<br>
                                     學校：中正預校<br>
                                     陸軍專科學校、海軍官校二專班、空軍航空技術學院<br>
                                     陸軍官校、空軍官校、海軍官校、國防大學 <br>
                                 </span>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- #Slider Ends -->
 </div>
 
 
 <div id="work">
-    <div class="jumbotron"
-         style=" background-image: url({{URL::asset('images/index/work.jpg')}}); overflow: hidden; background-size: cover  ; height: 900px; width: 100% ;">
-        <div class="overlay" style="height: 500px;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-offset-3 col-lg-6 col-xs-12">
-                        <div style="background-color: rgba(255,255,255,0.6) ; padding: 5% ; margin-top: 15%">
-                            <h1 style="font-size: 50px; color: black; text-align: center">就業班隊</h1>
-                            <hr style="border: 1px solid #999999;">
-                            <span style="font-size: 20px;line-height: 50px; color: black">
-                                     簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介
+    <!-- Slider Starts -->
+    <div id="myCarousel" class="carousel slide banner-slider" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Item 1 -->
+            <div class="item active">
+                <img src="{{URL::asset('images/index/work.jpg')}}" alt="">
+                <div class="carousel-caption">
+                    <div class="caption-wrapper" style="text-align: left;text-shadow: none;">
+                        <div class="caption-info">
+
+                            <div style="width: 50%;
+                            height: 500px;
+                            background-color: rgba(255,255,255,0.6);
+                            padding: 40px;
+                            margin: 0 auto;">
+                                <h1 class="animated bounceInLeft"
+                                    style="font-size: 50px; color: black; text-align: center">就業班隊</h1>
+                                <hr style="border: 1px solid #999999;">
+                                <span style="font-size: 20px;line-height: 50px; color: black">
+                                    簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介
                                     <br>
                                     相關班隊：志願役士兵<br>
                                     專業專（士）官班、飛行常備軍官班<br>大學儲備軍官訓練團、軍情局專業士官班<br>
                                 </span>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- #Slider Ends -->
 </div>
 
 
-<div id="solider" style="margin-top: 50px">
-    <div class="container-fluid" id="soldier">
+
+
+
+
+
+
+
+<!-- works -->
+<div id="works" class=" clearfix grid">
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/1.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Adidas</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/1.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/2.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Jeans</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/2.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/3.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Metal</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/3.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/4.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Vintage</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/4.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+
+
+</div>
+<!-- works -->
+
+
+<!-- What we do -->
+<div class="what-we-do-container section-container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-offset-2 col-lg-3 col-xs-12">
-                <div style="background-color: aliceblue;padding: 5%; margin-top:50px; ">
-                    <h1 style="font-size: 50px; color: #999999; text-align: center">士兵</h1>
-                    <hr style="border: 1px solid #999999; ">
-                    <span style="font-size: 20px;line-height: 50px;">
+            <div class="col-sm-12 what-we-do section-description wow fadeIn">
+                <h2>What we do</h2>
+                <div class="divider-1 wow fadeInUp"><span></span></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 what-we-do-box wow fadeInUp">
+                <div class="what-we-do-box-icon"><i class="fa fa-pencil"></i></div>
+                <h3>Web design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="col-sm-4 what-we-do-box wow fadeInDown">
+                <div class="what-we-do-box-icon"><i class="fa fa-gears"></i></div>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="col-sm-4 what-we-do-box wow fadeInUp">
+                <div class="what-we-do-box-icon"><i class="fa fa-twitter"></i></div>
+                <h3>Social media</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" id="soldier" style="margin-top: 150px">
+    <div class="row ">
+        <div class="col-lg-6">
+            <div style="width: 499px;
+                            height: 500px;
+                            background-color: #F8F8F8;
+                            display: inline-block;
+                            float: left;
+                            margin-top: 100px;
+                            margin-left: -100px;
+                            padding: 40px;">
+
+                <span>
+                <h1 style="font-size: 50px; color: #999999; text-align: center">士兵</h1></span>
+                <hr style="border: 1px solid #999999; ">
+
+                <span style="font-size: 20px;line-height: 50px;">
                     薪資待遇：33,625/月<br>
                     服役時間：4年<br>
                     工作性質：於單位內工作穩定，容易培養一技之長，方便未來就業。<br>
                     適合班隊：志願役士兵
                 </span>
-                </div>
+
 
             </div>
-            <div class="col-lg-offset-2 col-lg-4 col-xs-12">
+        </div>
+        <div class="col-lg-6">
 
-                <img class="img-responsive" src="{{URL::asset('images/index/士兵.png')}}">
-            </div>
+            <img src="{{URL::asset('images/index/士兵.png')}}" alt="">
         </div>
     </div>
 </div>
 
 
-<div id="solider">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-offset-2 col-lg-4 col-xs-12">
-                <img class="img-responsive" src="{{URL::asset('images/index/士官.png')}}">
-            </div>
-            <div class="col-lg-offset-2 col-lg-3 col-xs-12">
-                <div style="background-color: aliceblue;padding: 5%; margin-top:150px; ">
-                    <h1 style="font-size: 50px; color: #999999; text-align: center">士官</h1>
-                    <hr style="border: 1px solid #999999; ">
-                    <span style="font-size: 20px;line-height: 50px;">
+<div id="NCO">
+    <!-- Slider Starts -->
+    <div id="myCarousel" class="carousel slide banner-slider" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Item 1 -->
+            <div class="item active">
+                <img src="{{URL::asset('images/index/士官.jpg')}}" alt="">
+                <div class="carousel-caption">
+                    <div class="caption-wrapper" style="text-align: left;text-shadow: none;">
+                        <div class="caption-info">
+
+                            <div style="width: 499px;
+                            height: 500px;
+                            background-color: rgba(255,255,255,0.6);
+                            display: inline-block;
+                            float: right;
+                            margin-right: 200px;
+                            padding: 40px;">
+                                <h1 class="animated bounceInLeft"
+                                    style="font-size: 50px; color: #999999; text-align: center">士官</h1>
+                                <hr style="border: 1px solid #999999;">
+
+                                <span style="font-size: 20px;line-height: 50px; color: black">
                     薪資待遇：39,325/月<br>
                     服役時間：3-6年<br>
                     工作性質：工作性質稍具挑戰性，需要帶領士兵從事不同任務，適合喜歡挑戰性工作者前往<br>
                     適合班隊：陸海空軍二專班、專業軍（士）官班、大專考選預備軍（士）官班
                 </span>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- #Slider Ends -->
 </div>
 
 
-<div id="officer">
-    <div class="container-fluid" id="soldier">
-        <div class="row">
-            <div class="col-lg-offset-2 col-lg-3 col-xs-12">
-                <div style="background-color: aliceblue; padding: 5%; margin-top: 50px">
-                    <h1 style="font-size: 50px; color: #999999; text-align: center">軍官</h1>
-                    <hr style="border: 1px solid #999999; ">
-                    <span style="font-size: 20px;line-height: 50px;">
+<div class="container-fluid" style="margin-top: 150px;" id="officer">
+    <div class="row">
+        <div class="col-lg-6">
+            <div style="width: 499px;
+                            height: 500px;
+                            background-color: #F8F8F8;
+                            display: inline-block;
+                            float: left;
+                            margin-top: 150px;
+                            margin-left: -100px;
+                            padding: 40px;">
+                <span>
+                <h1 style="font-size: 50px; color: #999999; text-align: center">軍官</h1></span>
+                <hr style="border: 1px solid #999999; width: 80%;">
+                <span style="font-size: 20px;line-height: 50px;">
                     薪資待遇：45,835/月<br>
                     服役時間：4-14年<br>
                     工作性質：須具備領導統御能力，具有非常大的挑戰性。<br>
                     適合班隊：軍事院校正期班、專業軍（士）官班、飛行常備軍官班、大專考選預備軍（士）官班
                 </span>
-                </div>
 
             </div>
-            <div class="col-lg-offset-1 col-lg-4 col-xs-12">
-                <img class="img-responsive" src="{{URL::asset('images/index/軍官.png')}}">
-            </div>
+        </div>
+        <div class="col-lg-6">
+
+            <img src="{{URL::asset('images/index/軍官.png')}}" alt="">
+
         </div>
     </div>
 </div>
@@ -305,8 +479,9 @@
 
 <div class="container-fluid" style="margin-top: 150px">
 
+
     <div class="row" style="margin-top: 50px">
-        <div class="col-lg-offset-2 col-lg-3 wowload fadeInLeft">
+        <div class=" col-lg-4 wowload fadeInLeft">
             <h4>
                 <i class="fa fa-paint-brush">
                 </i> 國防部人才招募中心
@@ -317,26 +492,28 @@
                 電話：(0800)000-050<br><br>
             </span>
         </div>
-        <div class=" col-lg-5 wowload fadeInLeft">
+        <div class=" col-lg-8 wowload fadeInLeft">
             <h4>
                 服務項目
                 <hr style="border: 1px solid lightgray">
+
+
             </h4>
             <span>
-                    一、開放時間：週一至週五上午七時至下午八時止，週六、日 ( 國定假日 ) 上午八時至下午五時。<br><br>
-                    二、國軍各班隊招募、報名日期、錄取人數、考試科目、入學(伍)等訊息。<br><br>
-                    三、國軍薪資、福利、待遇等諮詢。<br><br>
-                    四、海報資料及簡介索取。<br><br>
-                    五、舉辦各學校招募說明座談會。<br><br>
-                    六、各展場及活動場所提供宣導。<br><br>
-                    七、安排參加軍事單位及軍事院校參觀或體驗活動。<br><br>
+                一、開放時間：週一至週五上午七時至下午八時止，週六、日 ( 國定假日 ) 上午八時至下午五時。<br><br>
+二、國軍各班隊招募、報名日期、錄取人數、考試科目、入學(伍)等訊息。<br><br>
+三、國軍薪資、福利、待遇等諮詢。<br><br>
+四、海報資料及簡介索取。<br><br>
+五、舉辦各學校招募說明座談會。<br><br>
+六、各展場及活動場所提供宣導。<br><br>
+七、安排參加軍事單位及軍事院校參觀或體驗活動。<br><br>
             </span>
         </div>
     </div>
 
 
     <div class="row" style="margin-top: 50px">
-        <div class="col-lg-offset-2  col-lg-3 wowload fadeInLeft">
+        <div class="col-lg-4 wowload fadeInLeft">
             <h4>
                 北部地區人才招募中心
                 <hr style="border: 1px solid lightgray">
@@ -355,7 +532,7 @@
             </span>
         </div>
 
-        <div class="col-lg-3 wowload fadeInLeft">
+        <div class="col-lg-4 wowload fadeInLeft">
             <h4>
                 中部地區人才招募中心
                 <hr style="border: 1px solid lightgray">
@@ -376,7 +553,7 @@
 
         </div>
 
-        <div class="col-lg-3 wowload fadeInLeft">
+        <div class="col-lg-4 wowload fadeInLeft">
             <h4>
                 南部地區人才招募中心
                 <hr style="border: 1px solid lightgray">
@@ -390,12 +567,90 @@
             鳳山招募站：07-7407941　<br>地址：高雄市鳳山區和平路102號<br><br>
             屏東招募站：08-7519826　<br>地址：屏東市建國路151號<br><br>
             臺東招募站：089-349791　<br>地址：臺東市博愛路261號<br><br>
+
+
         </span>
         </div>
 
 
     </div>
 </div>
+
+
+
+
+
+<!-- works -->
+<div id="works" class=" clearfix grid">
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/1.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Adidas</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/1.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/2.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Jeans</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/2.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/3.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Metal</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/3.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/4.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Vintage</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/4.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/5.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Typers</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/5.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/6.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Marco</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/6.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/7.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Chinese</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/7.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="{{ URL::asset('images/portfolio/8.jpg') }}" alt="img01"/>
+        <figcaption>
+            <h2>Dicrap</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+                <a href="{{ URL::asset('images/portfolio/8.jpg') }}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+    </figure>
+
+
+</div>
+<!-- works -->
 
 
 <div id="partners" class="container spacer ">
@@ -408,6 +663,8 @@
             <img src="{{ URL::asset('images/partners/4.jpg') }}" alt="partners">
         </div>
         <div class="col-sm-6">
+
+
             <div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight"
                  data-ride="carousel">
                 <div class="carousel-inner">
@@ -572,7 +829,6 @@
     </div>
 </div>
 <!--Contact Ends-->
-<div id="map" style="width:100%;height:500px"></div>
 
 
 <!-- Footer Starts -->
@@ -588,26 +844,17 @@
 <a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
 
 
-
-
-<script type="application/javascript">
-    function myMap() {
-        var mapCanvas = document.getElementById("map");
-        var mapOptions = {
-            center: new google.maps.LatLng(51.5, -0.2),
-            zoom: 10
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-    }
-</script>
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrP2BlfiPZ2QTW_PAG_xKqBPZvRjK9uLQ&callback=myMap"
-        async defer></script>
-
-
-
-
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title">title</h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+</div>
 
 
 <!-- jquery -->
@@ -628,6 +875,8 @@
 
 <!-- custom script -->
 <script src="{{ URL::asset('script.js') }}"></script>
+
+
 
 
 </body>
