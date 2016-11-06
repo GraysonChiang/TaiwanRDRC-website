@@ -24,6 +24,13 @@ class homecontroller extends Controller
         return view('study');
     }
 
+    public function welcome(){
+
+
+        return view('welcome');
+    }
+
+
 
 }
 
