@@ -14,4 +14,5 @@
 
 
 Route::get('/','homecontroller@index');
+Route::get('/study','homecontroller@study');
 
