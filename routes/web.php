@@ -15,5 +15,6 @@
 
 Route::get('/','homecontroller@index');
 Route::get('study','homecontroller@study');
-Route::get('welcome','homecontroller@welcome');
+Route::get('health','homecontroller@health');
+
 

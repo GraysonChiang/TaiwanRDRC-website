@@ -27,7 +27,7 @@
 
 <div id="Sergeant">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="background-color: #F5F5F5">
             <div class="col-lg-offset-2 col-lg-4 col-xs-12">
                 <img class="img-responsive" src="{{URL::asset('images/index/士官.png')}}">
             </div>
