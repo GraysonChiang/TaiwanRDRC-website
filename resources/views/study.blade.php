@@ -83,7 +83,11 @@
                         @include('study.航技')
                     </section>
                     <section id="section-bar-3">
-
+                        @include('study.陸軍官校')
+                        <hr width="100%" style="margin: 70px 0 70px 0 ;">
+                        @include('study.海軍官校')
+                        <hr width="100%" style="margin: 70px 0 70px 0 ;">
+                        @include('study.空軍官校')
                     </section>
                 </div>
             </div>

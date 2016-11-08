@@ -10,7 +10,7 @@
                         <h1 class="animated bounceInLeft" style="font-size: 100px;">國軍人才招募中心</h1>
                         <p class="animated bounceInRight" style="font-size: 40px;">開啟人生，無限可能</p>
                         <div class="scroll animated fadeInUp">
-                            <a href="#choice" class="btn btn-default">
+                            <a href="#choice" class="btn btn-primary" style="width: 20%">
                                 <i class="fa fa-flask"></i>
                                 GETTING START
                             </a>
@@ -30,7 +30,7 @@
                         <h1 class="animated bounceInLeft" style="font-size: 100px;">國軍人才招募中心</h1>
                         <p class="animated bounceInRight" style="font-size: 40px;">加入我們，是您最好的選擇</p>
                         <div class="scroll animated fadeInUp">
-                            <a href="#choice" class="btn btn-default">
+                            <a href="#choice" class="btn btn-primary" style="width: 20%">
                                 <i class="fa fa-flask"></i>GETTING START
                             </a>
                         </div>

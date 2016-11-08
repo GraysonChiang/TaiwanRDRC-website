@@ -30,7 +30,11 @@ class homecontroller extends Controller
         return view('welcome');
     }
 
+    public function health(){
 
+
+        return view('health');
+    }
 
 }
 

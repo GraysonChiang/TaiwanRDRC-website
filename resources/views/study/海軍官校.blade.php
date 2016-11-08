@@ -8,7 +8,7 @@
     </div>
     <div class="col-lg-6 col-xs-12" style="margin-top: 20px">
         <div style="line-height: 25px">
-            <span style="font-size: 50px; text-align: center">海軍官校-二專班</span>
+            <span style="font-size: 50px; text-align: center">海軍官校</span>
             &nbsp;
             <a href="https://www.facebook.com/R.O.C.NavalAcademy/" style="text-decoration: none">
                 <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
@@ -28,7 +28,7 @@
             <br>
             <span>
                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                <a href="{{ URL::asset('簡章/專科/105.pdf') }}" target="_blank"
+                <a href="{{ URL::asset('簡章/正期/105.pdf') }}" target="_blank"
                    style="text-decoration: none">
                     105年度
                 </a>
@@ -38,7 +38,7 @@
             <div class="col-lg-6">
 
                 <button type="button" style="font-size: 20px ;" class="btn btn-primary" data-toggle="collapse"
-                        data-target="#cna">了解更多
+                        data-target="#cna-officer">了解更多
                 </button>
 
             </div>
@@ -53,7 +53,7 @@
 </div>
 
 
-<div id="cna" class="collapse">
+<div id="cna-officer" class="collapse">
     <div class="row" style="margin-top: 20px;">
         <div class="col-lg-4 col-xs-12">
             <span style="text-align: center;color: #00A9C6;display: block;"><b>學校簡介</b></span><br>

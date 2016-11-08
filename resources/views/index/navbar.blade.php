@@ -33,24 +33,8 @@
 
                     <ul class="nav navbar-nav navbar-right scroll">
 
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent;">
-                                就學班隊
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#study">介紹</a></li>
-                                <li><a href="#">中正預校</a></li>
-                                <li><a href="#">陸軍官科學校</a></li>
-                                <li><a href="#">海軍官校二專班</a></li>
-                                <li><a href="#">空軍航空技術學院</a></li>
-                                <li><a href="#">陸軍官校</a></li>
-                                <li><a href="#">空軍官校</a></li>
-                                <li><a href="#">海軍官校</a></li>
-                                <li><a href="#">國防大學</a></li>
-                            </ul>
-                        </li>
 
+                        <li><a href="#study">就學班隊</a></li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent;">
