@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
 
 
-        $this->call(newsPostSeeder::class);
+//        $this->call(newsPostSeeder::class);
 
 
     }

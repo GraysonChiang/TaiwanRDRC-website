@@ -19,26 +19,26 @@ class newsPostSeeder extends Seeder
     public function run()
     {
 
-        $lastNum = $this->getNewNum();
-
-        for ($i = $lastNum, $j = $this->totalOfData; $i > $lastNum - $j; $i--) {
-
-            $result = $this->getLastNews($i);
-
-            if ($result) {
-
-                DB::table('officialnews')->insert([
-                    'sid' => $result['sid'],
-                    'title' => $result['title'],
-                    'content' => $result['content'],
-                    'dep' => $result['dep'],
-                    'data' =>  $result['date'],
-                    'file1'=> $result['files']['file1_path'],
-                    'file2'=> $result['files']['file2_path'],
-                    'file3'=> $result['files']['file3_path']
-                ]);
-            }
-        }
+//        $lastNum = $this->getNewNum();
+//
+//        for ($i = $lastNum, $j = $this->totalOfData; $i > $lastNum - $j; $i--) {
+//
+//            $result = $this->getLastNews($i);
+//
+//            if ($result) {
+//
+//                DB::table('officialnews')->insert([
+//                    'sid' => $result['sid'],
+//                    'title' => $result['title'],
+//                    'content' => $result['content'],
+//                    'dep' => $result['dep'],
+//                    'data' =>  $result['date'],
+//                    'file1'=> $result['files']['file1_path'],
+//                    'file2'=> $result['files']['file2_path'],
+//                    'file3'=> $result['files']['file3_path']
+//                ]);
+//            }
+//        }
     }
 
     public function getNewNum()

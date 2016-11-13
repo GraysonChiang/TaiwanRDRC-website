@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
-use anlutro\cURL\cURL;
-use Sunra\PhpSimple\HtmlDomParser;
+//use anlutro\cURL\cURL;
+//use Sunra\PhpSimple\HtmlDomParser;
 use Illuminate\Support\Facades\DB;
 
 
@@ -24,10 +24,10 @@ class homecontroller extends Controller
         $posts = DB::table('officialnews')->orderBy('sid', 'desc')->take(10)->get();
 
         $result = [
-          'total' => $this->getTotalPeople(),
-          'onlineTotal' => $this->getTotalOnlinePeople(),
-//            'total' => '12',
-//            'onlineTotal' => '123',
+//          'total' => $this->getTotalPeople(),
+//          'onlineTotal' => $this->getTotalOnlinePeople(),
+            'total' => '12',
+            'onlineTotal' => '123',
             'data' => $posts,
             'isIndex' => true
         ];
@@ -119,11 +119,11 @@ class homecontroller extends Controller
     public function getTotalOnlinePeople()
     {
 
-        $html = HtmlDomParser::file_get_html('https://rdrc.mnd.gov.tw/rdrc/');
-
-        $Total = trim($html->find('#ctl00_online_count', 0)->plaintext, ' ');
-
-        return $Total;
+//        $html = HtmlDomParser::file_get_html('https://rdrc.mnd.gov.tw/rdrc/');
+//
+//        $Total = trim($html->find('#ctl00_online_count', 0)->plaintext, ' ');
+//
+//        return $Total;
 
     }
 
@@ -131,11 +131,11 @@ class homecontroller extends Controller
     public function getTotalPeople()
     {
 
-        $html = HtmlDomParser::file_get_html('https://rdrc.mnd.gov.tw/rdrc/');
-
-        $peopleTotal = trim($html->find('#ctl00_accu_count', 0)->plaintext, ' ');
-
-        return $peopleTotal;
+//        $html = HtmlDomParser::file_get_html('https://rdrc.mnd.gov.tw/rdrc/');
+//
+//        $peopleTotal = trim($html->find('#ctl00_accu_count', 0)->plaintext, ' ');
+//
+//        return $peopleTotal;
 
     }
 
