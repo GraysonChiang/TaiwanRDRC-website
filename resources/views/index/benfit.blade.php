@@ -15,8 +15,8 @@
                         <br><br>
                         <br><br>
 
-                        <div class="scroll animated fadeInUp">
-                            <a href="#" class="btn btn-primary"
+                        <div class="animated fadeInUp">
+                            <a href="{{ asset('/benefit') }}" class="btn btn-primary"
                                style="width: 100%;height: 50px;
                                             line-height: 50px;
                                             padding: 0px;

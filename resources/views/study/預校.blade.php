@@ -1,3 +1,4 @@
+
 <div class="row">
     <div class="col-lg-6 col-xs-12">
         <a href="http://www.ccafps.khc.edu.tw/"
@@ -44,7 +45,7 @@
             <br><br><br>
 
             <div class="col-lg-6">
-                <button type="button"class="btn btn-primary rdrc-btn" data-toggle="collapse"
+                <button type="button" class="btn btn-primary rdrc-btn" data-toggle="collapse"
                         data-target="#ccafps">了解更多
                 </button>
             </div>
@@ -52,13 +53,18 @@
 
                 <a href="http://www.ccafps.khc.edu.tw/"
                    target="_blank"
-                   class="btn btn-primary rdrc-btn" >前往官方網站</a>
+                   class="btn btn-primary rdrc-btn">前往官方網站</a>
             </div>
         </div>
     </div>
 </div>
 
 <div id="ccafps" class="collapse" style="margin-top: 30px;">
+
+
+
+
+
     <div class="row">
         <div class="col-lg-4 col-xs-12">
             <span style="text-align: center;color: #00A9C6;display: block;"><b>教育宗旨</b></span><br>

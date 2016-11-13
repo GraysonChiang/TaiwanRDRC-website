@@ -56,7 +56,7 @@
                             <li><a href="{{ asset('/') }}">回首頁</a></li>
                             <li><a href="{{ asset('/study') }}">升學班隊</a></li>
                             <li><a href="{{ asset('/work') }}">就業班隊</a></li>
-                            <li><a href="#">福利待遇</a></li>
+                            <li><a href="{{ asset('/benefit')  }}">福利待遇</a></li>
                             <li><a href="#">快速報名</a></li>
                             <li><a href="#">招募中心</a></li>
                             <li><a href="#">聯絡我們</a></li>

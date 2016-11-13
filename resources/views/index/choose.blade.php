@@ -4,7 +4,7 @@
             最新消息
         </h3>
         <hr style="border: 1px solid lightgray; margin-top: 10px">
-        <div style="list-style-type: none;line-height: 25px; padding: 0px;">
+        <div style="list-style-type: none;line-height: 25px; padding: 0;">
             @foreach ($result['data'] as $data )
                 <div class="row">
                     <div class="col-lg-3 col-xs-10 " >

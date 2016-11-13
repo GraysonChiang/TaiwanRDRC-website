@@ -24,10 +24,10 @@ class homecontroller extends Controller
         $posts = DB::table('officialnews')->orderBy('sid', 'desc')->take(10)->get();
 
         $result = [
-//          'total' => $this->getTotalPeople(),
-            'total' => '12',
-//          'onlineTotal' => $this->getTotalOnlinePeople(),
-            'onlineTotal' => '123',
+          'total' => $this->getTotalPeople(),
+          'onlineTotal' => $this->getTotalOnlinePeople(),
+//            'total' => '12',
+//            'onlineTotal' => '123',
             'data' => $posts,
             'isIndex' => true
         ];
@@ -44,6 +44,14 @@ class homecontroller extends Controller
         ];
 
         return view('study', ['result' => $result]);
+    }
+    public function benefit()
+    {
+        $result = [
+            'isIndex' => false
+        ];
+
+        return view('benefit', ['result' => $result]);
     }
 
     public function work()
@@ -74,6 +82,40 @@ class homecontroller extends Controller
     }
 
 
+   public function messagePost(Request $request){
+
+//       dd($request['name'].$request['phone'].$request['type']);
+
+
+       $this->validate($request, [
+           'name' => 'required|max:255',
+           'phone' => 'required',
+           'type' => 'required',
+           'content' => 'required'
+       ]);
+
+
+
+       $message = DB::table('messages')->insert(
+           [
+               'name' => $request['name'],
+               'phone' =>$request['phone'],
+               'content' =>$request['content'],
+               'type' =>$request['type'],
+               'create_at'=> date('Y-m-d H:i:s'),
+           ]);
+
+
+
+
+
+
+       return redirect('/');
+
+   }
+
+
+
     public function getTotalOnlinePeople()
     {
 
@@ -96,6 +138,9 @@ class homecontroller extends Controller
         return $peopleTotal;
 
     }
+
+
+
 
 
 }

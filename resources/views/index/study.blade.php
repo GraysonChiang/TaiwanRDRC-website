@@ -1,5 +1,10 @@
 <div class="jumbotron"
-     style=" background-image: url({{URL::asset('images/index/study.jpg')}}); overflow: hidden; background-size: cover  ; height: 800px; width: 100% ;">
+     style=" background-image: url({{URL::asset('images/index/study.jpg')}});
+             overflow: hidden;
+             background-size: cover  ;
+             height: 800px;
+             width: 100% ;
+             margin-bottom: 0;">
     <div class="overlay" style="height: 500px;">
         <div class="container-fluid">
             <div class="row">
