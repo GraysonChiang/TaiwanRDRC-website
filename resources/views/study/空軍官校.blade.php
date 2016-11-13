@@ -36,7 +36,7 @@
             <br><br><br>
 
             <div class="col-lg-6">
-                <button type="button" style="font-size: 20px ;" class="btn btn-primary" data-toggle="collapse"
+                <button type="button"  class="btn btn-primary rdrc-btn" data-toggle="collapse"
                         data-target="#afats-officer">了解更多
                 </button>
 
@@ -45,7 +45,7 @@
 
                 <a href="https://www.cafa.edu.tw/home.asp"
                    target="_blank"
-                   class="btn btn-primary" style="font-size: 20px;">前往官方網站</a>
+                   class="btn btn-primary rdrc-btn" >前往官方網站</a>
             </div>
         </div>
     </div>

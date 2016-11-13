@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/tabs.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/tabstyles.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/custom.css') }}">
 
 
 </head>
@@ -53,7 +54,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-xs-12">
+        <div class="col-lg-10 col-lg-offset-1 col-xs-12">
             <div class="tabs tabs-style-bar" style="margin-top: 100px">
                 <nav>
                     <ul>

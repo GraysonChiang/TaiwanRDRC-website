@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-offset-3 col-lg-6 col-xs-12">
-                    <div style="background-color: rgba(255,255,255,0.6) ; padding: 5% ; margin-top: 15%">
+                    <div style="background-color: rgba(255,255,255,0.8) ; padding: 5% ; margin-top: 15%">
                         <h1 style="font-size: 50px; color: black; text-align: center">升學班隊</h1>
                         <hr style="border: 1px solid #999999;">
                         <span style="font-size: 20px;line-height: 50px; color: black">
@@ -14,7 +14,8 @@
                                     陸軍官校、空軍官校、海軍官校、國防大學 <br>
                                 </span>
                             <a href="{{ asset('/study') }}" class="btn btn-primary"
-                               style="width: 100%;height: 50px;
+                               style="width: 100%;
+                                       height: 50px;
                                             line-height: 50px;
                                             padding: 0px;
                                             font-size: 20px;">Read more</a>

@@ -22,6 +22,7 @@
 
 
     <link rel="stylesheet" href="{{ URL::asset('style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/custom.css') }}">
 
 
 </head>
@@ -34,59 +35,55 @@
 
 
 <div id="home">
-@include('index.slider')
+    @include('index.slider')
 </div>
 
 
 <div id="choice" class="container-fluid spacer ">
-@include('index.choose')
+    @include('index.choose')
 </div>
 
 <div id="study">
-@include('index.study')
+    @include('index.study')
 </div>
 
 
 <div id="work">
-@include('index.work')
+    @include('index.work')
 </div>
 
 
 @include('index.jobtype')
 
 
-
 <div id="benfit">
-@include('index.benfit')
+    @include('index.benfit')
 </div>
 
 
+<div id="register">
+    @include('index.quickregister')
+</div>
 
 <div id="location">
-
-@include('index.location')
-
+    @include('index.location')
 </div>
-
 
 
 <div id="status">
 
-@include('index.status')
+    @include('index.status')
 
 </div>
 
 
-
-
-
 <div id="contact" class="spacer">
-@include('index.contact');
+    @include('index.contact')
 </div>
 
 
 <div id="googleMap">
-{{--<div id="map" style="width:100%;height:500px"></div>--}}
+    {{--<div id="map" style="width:100%;height:500px"></div>--}}
 </div>
 
 @include('footer')
@@ -98,7 +95,7 @@
     function myMap() {
         var mapCanvas = document.getElementById("map");
         var mapOptions = {
-            center: new google.maps.LatLng(25.0219888,121.5221192),
+            center: new google.maps.LatLng(25.0219888, 121.5221192),
             zoom: 18
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -108,8 +105,6 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrP2BlfiPZ2QTW_PAG_xKqBPZvRjK9uLQ&callback=myMap"
         async defer></script>
-
-
 
 
 <!-- jquery -->

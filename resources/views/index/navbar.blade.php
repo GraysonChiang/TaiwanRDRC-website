@@ -1,7 +1,3 @@
-
-
-
-
 <!-- Header Starts -->
 <div class="navbar-wrapper">
     <div class="container-fluid">
@@ -25,52 +21,50 @@
 
                 </div>
 
+            @if($result['isIndex'])
+                <!-- Nav Starts -->
+                    <div class="navbar-collapse  collapse">
+                        <ul class="nav navbar-nav navbar-right scroll">
+                            <li><a href="{{ asset('') }}">回首頁</a></li>
+                            <li><a href="#study">升學班隊</a></li>
+                            <li><a href="#work">就業班隊</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                   style="background-color: transparent;">
+                                    職務種類
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#solider">士兵</a></li>
+                                    <li><a href="#Sergeant">士官</a></li>
+                                    <li><a href="#officer">軍官</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#benfit">福利待遇</a></li>
+                            <li><a href="#register">快速報名</a></li>
+                            <li><a href="#location">招募中心</a></li>
+                            <li><a href="#contact">聯絡我們</a></li>
+                        </ul>
+                    </div>
+                    <!-- #Nav Ends -->
+
+                @elseif(!$result['isIndex'])
 
                 <!-- Nav Starts -->
-                <div class="navbar-collapse  collapse">
+                    <div class="navbar-collapse  collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="{{ asset('/') }}">回首頁</a></li>
+                            <li><a href="{{ asset('/study') }}">升學班隊</a></li>
+                            <li><a href="{{ asset('/work') }}">就業班隊</a></li>
+                            <li><a href="#">福利待遇</a></li>
+                            <li><a href="#">快速報名</a></li>
+                            <li><a href="#">招募中心</a></li>
+                            <li><a href="#">聯絡我們</a></li>
+                        </ul>
+                    </div>
+                @endif
 
 
-
-                    <ul class="nav navbar-nav navbar-right scroll">
-
-
-                        <li><a href="#study">就學班隊</a></li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent;">
-                                就業班隊
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#study">介紹</a></li>
-                                <li><a href="#">志願役士兵</a></li>
-                                <li><a href="#">專業軍士官班</a></li>
-                                <li><a href="#">飛行常備軍官班</a></li>
-                                <li><a href="#">軍情局專業軍官班</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent;">
-                                工作區分
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#solider">士兵</a></li>
-                                <li><a href="#Sergeant">士官</a></li>
-                                <li><a href="#officer">軍官</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#benfit">福利待遇</a></li>
-                        <li><a href="#location">招募中心</a></li>
-                        <li><a href="#contact">聯絡我們</a></li>
-                    </ul>
-
-                </div>
-
-
-
-                <!-- #Nav Ends -->
             </div>
         </div>
 

@@ -16,7 +16,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-offset-2 col-lg-4 col-xs-12">
+            <div class="col-lg-offset-2 col-lg-4 hidden-xs">
 
                 <img class="img-responsive" src="{{URL::asset('images/index/士兵.png')}}">
             </div>
@@ -28,7 +28,7 @@
 <div id="Sergeant">
     <div class="container-fluid">
         <div class="row" style="background-color: #F5F5F5">
-            <div class="col-lg-offset-2 col-lg-4 col-xs-12">
+            <div class="col-lg-offset-2 col-lg-4 hidden-xs">
                 <img class="img-responsive" src="{{URL::asset('images/index/士官.png')}}">
             </div>
             <div class="col-lg-offset-2 col-lg-3 col-xs-12">
@@ -64,7 +64,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-offset-1 col-lg-4 col-xs-12">
+            <div class="col-lg-offset-1 col-lg-4 hidden-xs">
                 <img class="img-responsive" src="{{URL::asset('images/index/軍官.png')}}">
             </div>
         </div>
